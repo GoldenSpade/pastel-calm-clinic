@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { MessageCircle, Instagram, Calendar, Clock, Package, Package2, Crown, MessageSquare, FileText, BookOpen, GraduationCap, Award, Users, Plus, User, FileSearch, Phone, Send } from "lucide-react";
 import { useNavigate } from "react-router-dom";
+import headerLogo from "@/assets/header-logo.jpg";
 
 const Index = () => {
   const navigate = useNavigate();
@@ -9,7 +10,7 @@ const Index = () => {
       <div className="text-center space-y-10 max-w-6xl mx-auto">
         {/* Profile Picture */}
         <div className="flex justify-center">
-          <img src="/lovable-uploads/8f6c8ea0-34f7-4222-a40e-711588db19e5.png" alt="Психолог Майя Кондрук" className="w-48 h-48 rounded-full object-cover shadow-card" />
+          <img src={headerLogo} alt="Психолог Майя Кондрук" className="w-48 h-48 rounded-full object-cover shadow-card" />
         </div>
 
         {/* Header */}
